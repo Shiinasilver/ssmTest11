@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.smbms.mapper.SmbmsProviderMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.smbms.pojo.SmbmsProvider">
+        <id property="id" column="id" />
+        <result property="proCode" column="proCode" />
+        <result property="proName" column="proName" />
+        <result property="proDesc" column="proDesc" />
+        <result property="proContact" column="proContact" />
+        <result property="proPhone" column="proPhone" />
+        <result property="proAddress" column="proAddress" />
+        <result property="proFax" column="proFax" />
+        <result property="createdBy" column="createdBy" />
+        <result property="creationDate" column="creationDate" />
+        <result property="modifyBy" column="modifyBy" />
+        <result property="modifyDate" column="modifyDate" />
+    </resultMap>
+
+    <!-- 插入 -->
+    <insert id="insertProvider" parameterType="com.example.smbms.pojo.SmbmsProvider" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO smbms_provider
+        (proCode, proName, proDesc, proContact, proPhone, proAddress, proFax, createdBy, creationDate, modifyBy, modifyDate)
+        VALUES
+        (#{proCode}, #{proName}, #{proDesc}, #{proContact}, #{proPhone}, #{proAddress},
+        #{proFax}, #{createdBy}, #{creationDate}, #{modifyBy}, #{modifyDate})
+    </insert>
+
+    <!-- 删除 -->
+    <delete id="deleteProviderById" parameterType="long">
+        DELETE FROM smbms_provider WHERE id = #{id}
+    </delete>
+
+    <!-- 更新 -->
+    <update id="updateProvider" parameterType="com.example.smbms.pojo.SmbmsProvider">
+        UPDATE smbms_provider
+        SET
+        proCode = #{proCode},
+        proName = #{proName},
+        proDesc = #{proDesc},
+        proContact = #{proContact},
+        proPhone = #{proPhone},
+        proAddress = #{proAddress},
+        proFax = #{proFax},
+        createdBy = #{createdBy},
+        creationDate = #{creationDate},
+        modifyBy = #{modifyBy},
+        modifyDate = #{modifyDate}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 查询单个 -->
+    <select id="selectProviderById" parameterType="long" resultMap="BaseResultMap">
+        SELECT * FROM smbms_provider WHERE id = #{id}
+    </select>
+
+    <!-- 查询全部 -->
+    <select id="selectAllProviders" resultMap="BaseResultMap">
+        SELECT * FROM smbms_provider
+    </select>
+
+</mapper>

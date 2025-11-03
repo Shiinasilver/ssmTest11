@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.smbms.mapper.SmbmsBillMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.smbms.pojo.SmbmsBill">
+        <id property="id" column="id" />
+        <result property="billCode" column="billCode" />
+        <result property="productName" column="productName" />
+        <result property="productDesc" column="productDesc" />
+        <result property="productUnit" column="productUnit" />
+        <result property="productCount" column="productCount" />
+        <result property="totalPrice" column="totalPrice" />
+        <result property="isPayment" column="isPayment" />
+        <result property="providerId" column="providerId" />
+        <result property="createdBy" column="createdBy" />
+        <result property="creationDate" column="creationDate" />
+        <result property="modifyBy" column="modifyBy" />
+    </resultMap>
+
+    <!-- 插入 -->
+    <insert id="insertBill" parameterType="com.example.smbms.pojo.SmbmsBill" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO smbms_bill
+        (billCode, productName, productDesc, productUnit, productCount, totalPrice, isPayment,
+        providerId, createdBy, creationDate, modifyBy)
+        VALUES
+        (#{billCode}, #{productName}, #{productDesc}, #{productUnit}, #{productCount},
+        #{totalPrice}, #{isPayment}, #{providerId}, #{createdBy}, #{creationDate}, #{modifyBy})
+    </insert>
+
+    <!-- 删除 -->
+    <delete id="deleteBillById" parameterType="long">
+        DELETE FROM smbms_bill WHERE id = #{id}
+    </delete>
+
+    <!-- 更新 -->
+    <update id="updateBill" parameterType="com.example.smbms.pojo.SmbmsBill">
+        UPDATE smbms_bill
+        SET
+        billCode = #{billCode},
+        productName = #{productName},
+        productDesc = #{productDesc},
+        productUnit = #{productUnit},
+        productCount = #{productCount},
+        totalPrice = #{totalPrice},
+        isPayment = #{isPayment},
+        providerId = #{providerId},
+        createdBy = #{createdBy},
+        creationDate = #{creationDate},
+        modifyBy = #{modifyBy}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 查询单个 -->
+    <select id="selectBillById" parameterType="long" resultMap="BaseResultMap">
+        SELECT * FROM smbms_bill WHERE id = #{id}
+    </select>
+
+    <!-- 查询全部 -->
+    <select id="selectAllBills" resultMap="BaseResultMap">
+        SELECT * FROM smbms_bill
+    </select>
+
+</mapper>
