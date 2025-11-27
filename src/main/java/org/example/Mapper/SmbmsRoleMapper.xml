@@ -4,7 +4,7 @@
 
 <mapper namespace="com.example.smbms.mapper.SmbmsRoleMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.smbms.pojo.SmbmsRole">
+    <resultMap id="BaseResultMap" type="com.example.smbms.entity.SmbmsRole">
         <id property="id" column="id" />
         <result property="roleCode" column="roleCode" />
         <result property="roleName" column="roleName" />
@@ -15,7 +15,7 @@
     </resultMap>
 
     <!-- 插入 -->
-    <insert id="insertRole" parameterType="com.example.smbms.pojo.SmbmsRole" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertRole" parameterType="com.example.smbms.entity.SmbmsRole" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO smbms_role
         (roleCode, roleName, createdBy, creationDate, modifyBy, modifyDate)
         VALUES
@@ -28,7 +28,7 @@
     </delete>
 
     <!-- 更新 -->
-    <update id="updateRole" parameterType="com.example.smbms.pojo.SmbmsRole">
+    <update id="updateRole" parameterType="com.example.smbms.entity.SmbmsRole">
         UPDATE smbms_role
         SET
         roleCode = #{roleCode},

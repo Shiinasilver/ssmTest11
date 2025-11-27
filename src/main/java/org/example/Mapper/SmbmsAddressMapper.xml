@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.example.smbms.Mapper.SmbmsAddressMapper">
+<mapper namespace="com.example.smbms.mapper.SmbmsAddressMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.smbms.Pojo.SmbmsAddress">
+    <resultMap id="BaseResultMap" type="com.example.smbms.entity.SmbmsAddress">
         <id property="id" column="id" />
         <result property="contact" column="contact" />
         <result property="addressDesc" column="addressDesc" />
@@ -18,7 +18,7 @@
     </resultMap>
 
     <!-- 插入 -->
-    <insert id="insertAddress" parameterType="com.example.smbms.Pojo.SmbmsAddress" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertAddress" parameterType="com.example.smbms.entity.SmbmsAddress" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO smbms_address
         (contact, addressDesc, postCode, tel, createdBy, creationDate, modifyBy, modifyDate, userId)
         VALUES
@@ -31,7 +31,7 @@
     </delete>
 
     <!-- 更新 -->
-    <update id="updateAddress" parameterType="com.example.smbms.Pojo.SmbmsAddress">
+    <update id="updateAddress" parameterType="com.example.smbms.entity.SmbmsAddress">
         UPDATE smbms_address
         SET
         contact = #{contact},

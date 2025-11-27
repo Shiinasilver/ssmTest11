@@ -4,7 +4,7 @@
 
 <mapper namespace="com.example.smbms.mapper.SmbmsBillMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.smbms.pojo.SmbmsBill">
+    <resultMap id="BaseResultMap" type="com.example.smbms.entity.SmbmsBill">
         <id property="id" column="id" />
         <result property="billCode" column="billCode" />
         <result property="productName" column="productName" />
@@ -20,7 +20,7 @@
     </resultMap>
 
     <!-- 插入 -->
-    <insert id="insertBill" parameterType="com.example.smbms.pojo.SmbmsBill" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertBill" parameterType="com.example.smbms.entity.SmbmsBill" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO smbms_bill
         (billCode, productName, productDesc, productUnit, productCount, totalPrice, isPayment,
         providerId, createdBy, creationDate, modifyBy)
@@ -35,7 +35,7 @@
     </delete>
 
     <!-- 更新 -->
-    <update id="updateBill" parameterType="com.example.smbms.pojo.SmbmsBill">
+    <update id="updateBill" parameterType="com.example.smbms.entity.SmbmsBill">
         UPDATE smbms_bill
         SET
         billCode = #{billCode},

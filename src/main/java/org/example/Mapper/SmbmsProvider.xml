@@ -4,7 +4,7 @@
 
 <mapper namespace="com.example.smbms.mapper.SmbmsProviderMapper">
 
-    <resultMap id="BaseResultMap" type="com.example.smbms.pojo.SmbmsProvider">
+    <resultMap id="BaseResultMap" type="com.example.smbms.entity.SmbmsProvider">
         <id property="id" column="id" />
         <result property="proCode" column="proCode" />
         <result property="proName" column="proName" />
@@ -20,7 +20,7 @@
     </resultMap>
 
     <!-- 插入 -->
-    <insert id="insertProvider" parameterType="com.example.smbms.pojo.SmbmsProvider" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertProvider" parameterType="com.example.smbms.entity.SmbmsProvider" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO smbms_provider
         (proCode, proName, proDesc, proContact, proPhone, proAddress, proFax, createdBy, creationDate, modifyBy, modifyDate)
         VALUES
@@ -34,7 +34,7 @@
     </delete>
 
     <!-- 更新 -->
-    <update id="updateProvider" parameterType="com.example.smbms.pojo.SmbmsProvider">
+    <update id="updateProvider" parameterType="com.example.smbms.entity.SmbmsProvider">
         UPDATE smbms_provider
         SET
         proCode = #{proCode},
