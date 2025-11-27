@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="39effef8-9847-421b-9bf0-2a073010532c" name="更改" comment="更改v1.1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsAddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsAddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsBillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsBillMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsProviderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsProviderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsAddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsAddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsBillMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsBillMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsProvider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsProvider.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="363moJ9OKGeQv64hCC3RUaP2krL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Maven.ssm-project [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run].executor": "Run",
+    "Maven.ssm-project [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:shutdown].executor": "Run",
+    "Maven.ssmTest [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.ssmTest [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.smbms.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Idea\codes\ssmTset\src\main\resources\Mapper" />
+      <recent name="D:\Idea\codes\ssmTset\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.smbms.Application" />
+      <module name="ssmTset" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.smbms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="39effef8-9847-421b-9bf0-2a073010532c" name="更改" comment="" />
+      <created>1764243803599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764243803599</updated>
+    </task>
+    <task id="LOCAL-00001" summary="更改v1.1">
+      <option name="closed" value="true" />
+      <created>1764246380031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764246380031</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更改v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改v1.1" />
+  </component>
+</project>
