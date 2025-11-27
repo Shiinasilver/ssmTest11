@@ -1,8 +1,11 @@
 package com.example.smbms.mapper;
 
 import com.example.smbms.entity.Smbms_AddressDao;
+import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
+@Mapper
 public interface SmbmsAddressMapper {
     // 根据ID查询
     Smbms_AddressDao selectAddressById(Long id);

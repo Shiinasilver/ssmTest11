@@ -1,26 +1,20 @@
 package com.example.smbms.mapper;
 
 import com.example.smbms.entity.Smbms_User;
-import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
+
 import java.util.List;
 
+@Mapper
 public interface SmbmsUserMapper {
-    //以id查找用户
-    Smbms_User selectById(Long id);
-    //以用户代码查找
-    Smbms_User selectByUserCode(String userCode);
-    //查找所有
+    @Select("SELECT * FROM smbms_user")
     List<Smbms_User> selectAll();
-    //模糊查询
-    List<Smbms_User> selectByCondition(@Param("userName") String userName,
-                                       @Param("userRole") Long userRole);
-    //增加
-    int insert(Smbms_User user);
-    //修改
-    int update(Smbms_User user);
-    //删除
-    int deleteById(Long id);
-    //登录
-    Smbms_User login(@Param("userCode") String userCode,
-                     @Param("userPassword") String userPassword);
+
+    @Select("SELECT * FROM smbms_user WHERE id = #{id}")
+    Smbms_User selectById(Long id);
+
+    // 使用注解方式，避免 XML 配置问题
+    @Select("SELECT * FROM smbms_user WHERE userCode = #{userCode} AND userPassword = #{userPassword}")
+    Smbms_User login(String userCode, String userPassword);
 }
