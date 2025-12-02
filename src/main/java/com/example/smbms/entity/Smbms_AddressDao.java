@@ -16,5 +16,4 @@ public class Smbms_AddressDao {
     private Long modifyBy;
     private Date modifyDate;
     private Long userId;
-
 }

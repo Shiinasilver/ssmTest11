@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑用户</title>
+</head>
+<body>
+    <h1>编辑用户</h1>
+
+    <div>
+        <a th:href="@{/user/list}">返回列表</a>
+        <a th:href="@{/}">返回首页</a>
+    </div>
+
+    <hr>
+
+    <div th:if="${message}">
+        [[${message}]]
+    </div>
+
+    <form th:action="@{/user/edit}" method="post">
+        <input type="hidden" name="id" th:value="${user.id}">
+        <input type="hidden" name="createdBy" th:value="${user.createdBy}">
+        <input type="hidden" name="creationDate" th:value="${user.creationDate}">
+
+        <table>
+            <tr>
+                <td>用户编码:</td>
+                <td>[[${user.userCode}]]<input type="hidden" name="userCode" th:value="${user.userCode}"></td>
+            </tr>
+            <tr>
+                <td>用户名称:</td>
+                <td><input type="text" name="userName" th:value="${user.userName}" required></td>
+            </tr>
+            <tr>
+                <td>修改密码:</td>
+                <td><input type="password" name="userPassword" placeholder="留空则不修改"></td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td>
+                    <input type="radio" name="gender" value="1" th:checked="${user.gender == 1}">男
+                    <input type="radio" name="gender" value="2" th:checked="${user.gender == 2}">女
+                    <input type="radio" name="gender" value="3" th:checked="${user.gender == null or user.gender == 3}">保密
+                </td>
+            </tr>
+            <tr>
+                <td>生日:</td>
+                <td><input type="date" name="birthday" th:value="${#dates.format(user.birthday, 'yyyy-MM-dd')}"></td>
+            </tr>
+            <tr>
+                <td>电话:</td>
+                <td><input type="tel" name="phone" th:value="${user.phone}"></td>
+            </tr>
+            <tr>
+                <td>地址:</td>
+                <td><input type="text" name="address" th:value="${user.address}"></td>
+            </tr>
+            <tr>
+                <td>角色ID:</td>
+                <td>
+                    <select name="userRole" required>
+                        <option value="1" th:selected="${user.userRole == 1}">1-管理员</option>
+                        <option value="2" th:selected="${user.userRole == 2}">2-普通用户</option>
+                        <option value="3" th:selected="${user.userRole == 3}">3-VIP用户</option>
+                        <option value="4" th:selected="${user.userRole == 4}">4-访客</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>修改者ID:</td>
+                <td><input type="number" name="modifyBy" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">保存</button>
+                    <a th:href="@{/user/list}">取消</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+    <div>
+        <p>创建时间: [[${#dates.format(user.creationDate, 'yyyy-MM-dd HH:mm:ss')}]]</p>
+        <p th:if="${user.modifyDate}">最后修改: [[${#dates.format(user.modifyDate, 'yyyy-MM-dd HH:mm:ss')}]]</p>
+    </div>
+</body>
+</html>

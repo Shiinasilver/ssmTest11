@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+    <h1>用户管理</h1>
+
+    <!-- 搜索和操作 -->
+    <div>
+        <form th:action="@{/user/search}" method="get">
+            搜索: <input type="text" name="keyword" th:value="${keyword}" placeholder="用户编码/名称/电话">
+            <button type="submit">搜索</button>
+            <a th:href="@{/user/list}">重置</a>
+        </form>
+    </div>
+
+    <div>
+        <a th:href="@{/user/add}">添加用户</a>
+        <a th:href="@{/}">返回首页</a>
+    </div>
+
+    <!-- 消息提示 -->
+    <div th:if="${message}">
+        [[${message}]]
+    </div>
+
+    <!-- 用户表格 -->
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>用户编码</th>
+            <th>用户名称</th>
+            <th>性别</th>
+            <th>生日</th>
+            <th>电话</th>
+            <th>地址</th>
+            <th>角色ID</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td>[[${user.id}]]</td>
+            <td>[[${user.userCode}]]</td>
+            <td>[[${user.userName}]]</td>
+            <td>
+                <!-- 修复性别判断 -->
+                <span th:if="${user.gender == 1}">男</span>
+                <span th:if="${user.gender == 2}">女</span>
+                <span th:if="${user.gender == null or user.gender == 3}">保密</span>
+            </td>
+            <td>
+                <!-- 修复这里：使用 == null 而不是 ! -->
+                <span th:if="${user.birthday != null}">[[${#dates.format(user.birthday, 'yyyy-MM-dd')}]]</span>
+                <span th:if="${user.birthday == null}">-</span>
+            </td>
+            <td>
+                <!-- 修复电话显示 -->
+                <span th:if="${user.phone != null and user.phone != ''}">[[${user.phone}]]</span>
+                <span th:if="${user.phone == null or user.phone == ''}">-</span>
+            </td>
+            <td>
+                <!-- 修复地址显示 -->
+                <span th:if="${user.address != null and user.address != ''}">[[${user.address}]]</span>
+                <span th:if="${user.address == null or user.address == ''}">-</span>
+            </td>
+            <td>[[${user.userRole}]]</td>
+            <td>
+                <span th:if="${user.creationDate != null}">[[${#dates.format(user.creationDate, 'yyyy-MM-dd HH:mm')}]]</span>
+                <span th:if="${user.creationDate == null}">-</span>
+            </td>
+            <td>
+                <a th:href="@{/user/edit/{id}(id=${user.id})}">编辑</a>
+                <a th:href="@{/user/delete/{id}(id=${user.id})}"
+                   onclick="return confirm('确定删除用户【'+'[[${user.userName}]]'+'】吗？')">删除</a>
+            </td>
+        </tr>
+        <tr th:if="${#lists.isEmpty(users)}">
+            <td colspan="10">暂无用户数据</td>
+        </tr>
+    </table>
+
+    <!-- 统计信息 -->
+    <div>
+        总用户数: [[${users.size()}]]
+    </div>
+</body>
+</html>

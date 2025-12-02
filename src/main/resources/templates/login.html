@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+</head>
+<body>
+    <h1>用户登录</h1>
+
+    <!-- 错误消息 -->
+    <div th:if="${error}" style="color: red; padding: 10px;">
+        [[${error}]]
+    </div>
+
+    <!-- 成功消息 -->
+    <div th:if="${message}" style="color: green; padding: 10px;">
+        [[${message}]]
+    </div>
+
+    <!-- 登录表单 -->
+    <form th:action="@{/login}" method="post">
+        <table>
+            <tr>
+                <td>用户编码:</td>
+                <td><input type="text" name="userCode" required></td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td><input type="password" name="userPassword" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">登录</button>
+                    <a href="/register" style="margin-left: 20px;">注册新账号</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <hr>
+
+    <div>
+        <p>测试账号:</p>
+        <ul>
+            <li>管理员: admin / 123456</li>
+            <li>普通用户: zhangsan / 123456</li>
+        </ul>
+    </div>
+</body>
+</html>

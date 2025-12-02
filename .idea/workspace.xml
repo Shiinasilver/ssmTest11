@@ -4,29 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39effef8-9847-421b-9bf0-2a073010532c" name="更改" comment="更改v1.1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/config/WebAppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="39effef8-9847-421b-9bf0-2a073010532c" name="更改" comment="更改v1.2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsAddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsAddressMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsBillMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsBillMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsProviderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsProviderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/entity/Smbms_AddressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/entity/Smbms_AddressDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/mapper/SmbmsUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsAddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsAddressMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsBillMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsBillMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsProvider.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsProvider.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/SmbmsRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mapper/SmbmsRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/smbms/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +36,17 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/dragonwell-ex-21.0.8/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-25.0.1/lib/src.zip!/java.base/java/lang/ExceptionInInitializerError.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-25.0.1/lib/src.zip!/jdk.compiler/com/sun/tools/javac/code/TypeTag.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -56,30 +60,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Maven.ssm-project [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run].executor": "Run",
-    "Maven.ssm-project [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:shutdown].executor": "Run",
-    "Maven.ssmTest [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
-    "Maven.ssmTest [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Maven.ssm-project [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ssm-project [org.apache.tomcat.maven:tomcat7-maven-plugin:2.2:shutdown].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ssmTest [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ssmTest [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ssmTest [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ssmTest [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.smbms.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Idea\codes\ssmTset\src\main\resources\templates\user" />
+      <recent name="D:\Idea\codes\ssmTset\src\main\resources\templates" />
       <recent name="D:\Idea\codes\ssmTset\src\main\resources\Mapper" />
       <recent name="D:\Idea\codes\ssmTset\src\main\resources" />
     </key>
@@ -127,11 +136,43 @@
       <option name="project" value="LOCAL" />
       <updated>1764246380031</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更改v1.2">
+      <option name="closed" value="true" />
+      <created>1764253922381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764253922381</updated>
+    </task>
+    <task id="LOCAL-00003" summary="更改v1.2">
+      <option name="closed" value="true" />
+      <created>1764253949594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764253949594</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更改v1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改v1.1" />
+    <MESSAGE value="更改v1.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改v1.2" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
