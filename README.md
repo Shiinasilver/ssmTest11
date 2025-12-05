@@ -37,6 +37,7 @@
 - **Thymeleaf** - 模板语法
 
 ## 📁 项目目录结构
+# 项目目录结构
 ssmTest/
 ├── src/main/java/com/example/smbmms/
 │ ├── controller/
@@ -51,7 +52,6 @@ ssmTest/
 │ ├── mapper/
 │ │ └── UserMapper.java
 │ └── Application.java
-│
 ├── src/main/resources/
 │ ├── templates/
 │ │ ├── login.html
@@ -66,3 +66,4 @@ ssmTest/
 │ │ └── UserMapper.xml
 │ ├── application.properties
 │ └── pom.xml
+└── pom.xml
