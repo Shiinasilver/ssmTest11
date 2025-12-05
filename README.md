@@ -37,3 +37,32 @@
 - **Thymeleaf** - 模板语法
 
 ## 📁 项目目录结构
+ssmTest/
+├── src/main/java/com/example/smbmms/
+│ ├── controller/
+│ │ ├── LoginController.java
+│ │ ├── HomeController.java
+│ │ └── UserController.java
+│ ├── entity/
+│ │ └── SmlbmUdos.java
+│ ├── service/
+│ │ ├── UserService.java
+│ │ └── UserServiceImpl.java
+│ ├── mapper/
+│ │ └── UserMapper.java
+│ └── Application.java
+│
+├── src/main/resources/
+│ ├── templates/
+│ │ ├── login.html
+│ │ ├── register.html
+│ │ ├── index.html
+│ │ └── user/
+│ │ ├── list.html
+│ │ ├── add.html
+│ │ ├── edit.html
+│ │ └── view.html
+│ ├── mapper/
+│ │ └── UserMapper.xml
+│ ├── application.properties
+│ └── pom.xml
